@@ -15,9 +15,13 @@
   <body>
     <header class="container-fluid mx-auto">
 
-      <div class="bg-black text-center p-2">
-        <a href="#" class="text-sm text-white">Save up to 30% when you bundle!</a>
-        <a href="#" class="text-sm text-white underline uppercase">Shop Now</a>
+      <div
+        class="bg-black text-center p-2 leading-tight text-sm  font-semibold text-white sm:text-xs">
+        <a href="#" class="">Get 25% Off Your First
+          Supplement Order
+          When You
+          Subscribe</a>
+        <a href="#" class="underline uppercase">Shop Now</a>
       </div>
 
       <div class="container-fluid mx-auto flex justify-between items-center px-4">
@@ -33,12 +37,15 @@
       </div>
 
       <div class="bg-white flex items-center p-5 border-t-2 border-gray-200">
+        <div class="mr-4 lg:hidden">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </div>
         <a href="#">
           <img class="w-32" src="https://scdn.onnit.com/images/interface/branding/onnit-logo.svg"
             alt="">
         </a>
         <nav class="mx-auto">
-          <ul class="flex items-center">
+          <ul class="flex items-center max-[1024px]:hidden">
             <li><a href="#" class="text-sm font-black uppercase py-4 px-4">Supplements</a></li>
             <li><a href="#" class="text-sm font-black uppercase py-4 px-4">Nutrition</a></li>
             <li><a href="#" class="text-sm font-black uppercase py-4 px-4">Fitness</a></li>
@@ -48,14 +55,23 @@
             <li><a href="#" class="text-sm font-black uppercase py-4 px-4">Content</a></li>
             <li><a href="#" class="text-sm font-black uppercase py-4 px-4">Stores</a></li>
           </ul>
+          <ul class="flex justify-end gap-7 text-xs text-gray-500 lg:hidden">
+            <li><a href="#">Search <i class="pl-1 fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#">Account <i class="pl-1 fa-regular fa-user"></i></a></li>
+            <li><a href="#">Favorites <i class="pl-1 fa-regular fa-heart"></i></a></li>
+            <li><a href="#">Bag <i class="pl-1 fa-solid fa-bag-shopping"></i></a></li>
+          </ul>
         </nav>
+        <!-- <nav class="lg:hidden">
+         
+        </nav> -->
       </div>
     </header>
 
     <main>
 
-      <section class="container-fluid mx-auto" id="hero">
-        <div class="pb-20">
+      <section class="container-fluid mx-auto max-w-screen-2xl md:w-full" id="hero">
+        <div class="pb-20  mx-auto">
           <!-- <h2 class="font-black text-3xl uppercase mb-3 font-sans italic">Subscribe & Save 25% On
             First Alpha Brain
             Order</h2> -->
@@ -84,7 +100,8 @@
               alt="">
           </div>
           <div class="flex justify-between items-center pt-5 gap-5">
-            <p class="text-gray-500 font-sans tracking-wide">Redeem your Onnit X points to get great
+            <p class="text-gray-500 font-sans tracking-wide">Redeem your Onnit X points to
+              get great
               new Onnit swag!</p>
             <a href="#" class="px-36 py-5 bg-black text-white rounded-full whitespace-nowrap">Shop
               Now</a>
@@ -112,14 +129,14 @@
         </div>
       </section>
 
-      <section id="categories">
-        <div class="container mx-auto">
+      <section class="container-fluid mx-auto max-w-screen-2xl px-5 my-3" id="categories">
+        <div class="mx-auto">
           <div class="text-black">
             <h2 class="font-black text-2xl mb-4">Shop Categories</h2>
           </div>
           <div class="flex gap-3 text-white text-center">
             <div class="bg-black w-100% h-max overflow">
-              <img class="object-cover w-90% h-full"
+              <img class="object-cover w-90% h-full bg-blend-darken"
                 src="https://onnits3.imgix.net/product-page/whey-protein/2023-WheyP-wpage-gallery-3.png?q=40&fm=pjpg&auto=compress,format"
                 alt="image">
             </div>
@@ -233,10 +250,13 @@
           <!-- <div class="container mx-auto  p-5 bg-green-300"> -->
           <div class="text-center px-32 w-90% relative left-0 flex items-center">
             <div class="bg-white p-5 w-1/2 left-0 absolute">
-              <img class=""
+              <img class="mx-auto"
                 src="https://images.ctfassets.net/nfc1w9qpk6sl/3R90nAjf9qtpKLXftY2uwm/62dc85719d20abe56827e997e60240be/logoForWhatIsOnnit.svg"
                 alt="Onnit logo">
-              <p class="mb-5 text-gray-500">We're athletes, biohackers, professionals, retirees,
+              <p class="mb-5 text-gray-500 text-md">We're athletes,
+                biohackers,
+                professionals,
+                retirees,
                 parents, gamers,
                 fighters,
                 tradespeople, and
@@ -251,7 +271,7 @@
                 foundations to support your human journey.
               </p>
               <button
-                class="w-full px-36 py-5 bg-black text-white rounded-full whitespace-nowrap">Learn
+                class="w-full px-36 py-5 bg-black text-white rounded-full whitespace-nowrap hover:shadow-lg hover:shadow-gray-400 font-semibold">Learn
                 More About
                 Onnit</button>
             </div>
@@ -350,77 +370,79 @@
           </div>
         </div>
         <div class="container mx-auto py-8">
-          <div class="flex justify-between items-center gap-5 ">
+          <div class="flex justify-between items-center">
             <div class="">
               <h3>#GETONNIT</h3>
             </div>
             <div class="">
-              <ul class="flex justify-between items-center gap-5">
+              <ul class="flex justify-between items-center gap-4">
                 <li>
                   <a href="#">
-                    <img class="w-10" src="https://i.ibb.co/MRgz76W/icons8-facebook-50.png" alt="">
+                    <img class="w-8" src="https://i.ibb.co/MRgz76W/icons8-facebook-50.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="w-10" src="https://i.ibb.co/BB1KHwW/icons8-twitter-50.png" alt="">
+                    <img class="w-8" src="https://i.ibb.co/BB1KHwW/icons8-twitter-50.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="w-10" src="https://i.ibb.co/FqjFfQ4/icons8-instagram-50.png" alt="">
+                    <img class="w-8" src="https://i.ibb.co/FqjFfQ4/icons8-instagram-50.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="w-10" src="https://i.ibb.co/dcPMNW8/icons8-pinterest-50.png" alt="">
+                    <img class="w-8" src="https://i.ibb.co/dcPMNW8/icons8-pinterest-50.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="w-10" src="https://i.ibb.co/frvPSbr/icons8-youtube-50.png" alt="">
+                    <img class="w-8" src="https://i.ibb.co/frvPSbr/icons8-youtube-50.png" alt="">
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="flex justify-center items-center bg-white w-100">
-              <input class="p-3 w-96 border-2" type="email" placeholder="Email">
+            <div class="flex justify-center items-center bg-white">
+              <input class="p-3 border-2 w-1/2" type="email" placeholder="Email">
               <button class="px-2 rounded-full text-black font-22">></button>
             </div>
-            <div class="flex justify-center items-center bg-white w-100">
-              <input class="p-3 w-96 border-2" type="search" placeholder="Search">
+            <div class="flex justify-center items-center bg-white ">
+              <input class="p-3 border-2 w-1/2" type="search" placeholder="Search">
               <button class="px-2 rounded-full text-black font-22">></button>
             </div>
           </div>
         </div>
-        <div class="container flex space-between items-center gap-5">
-          <div class="">
-            <a href="#">Image</a>
+        <div class="container mx-auto flex space-between items-center gap-1 text-sm">
+          <div class="mb-1 mr-3">
+            <a href="#"><img src="https://placehold.co/54x60" /></a>
           </div>
-          <div class="flex space-between items-center gap-4">
-            <a href="#">© 2024 Onnit Labs, Inc.</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions </a>
-            <a href="#">Accessibility</a>
-            <a href="#">Do Not Sell or Share My Personal Information </a>
-            <a href="#">AdChoices - Do Not Sell or Share </a>
-          </div>
-        </div>
-        <div class="flex space-between items-center gap-4">
-          <a href="#">Consumer Health Data Privacy Policy </a>
-          <a href="#"> Limit Use of My Sensitive Personal Information </a>
-          <a href="#">Secure Shopping </a>
-          <a href="#">Accessibility</a>
-          <a href="#">Do Not Sell or Share My Personal Information </a>
-          <a href="#">AdChoices - Do Not Sell or Share </a>
-        </div>
-        <div class="flex space-between items-center gap-4">
-          <a href="#">† THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG
-            ADMINISTRATION.
-            THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY DISEASE.</a>
-        </div>
-      </div>
+          <div>
+            <div class="flex space-between items-center gap-1">
+              <a href="#">© 2024 Onnit Labs, Inc.</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions </a>
+              <a href="#">Accessibility</a>
+              <a href="#">Do Not Sell or Share My Personal Information </a>
+              <a href="#">AdChoices - Do Not Sell or Share </a>
+            </div>
+            <div class="flex space-between items-center gap-1">
+              <a href="#">Consumer Health Data Privacy Policy </a>
+              <a href="#"> Limit Use of My Sensitive Personal Information </a>
+              <a href="#">Secure Shopping </a>
+              <a href="#">Accessibility</a>
+              <a href="#">Do Not Sell or Share My Personal Information </a>
+              <a href="#">AdChoices - Do Not Sell or Share </a>
+            </div>
 
+            <div class="flex space-between items-center gap-1 text-sm">
+              <a href="#">† THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG
+                ADMINISTRATION.
+                THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY DISEASE.</a>
+            </div>
+
+          </div>
+        </div>
     </footer>
 
 
