@@ -134,6 +134,11 @@ header {
   background: #FAFAFA;
 }
 
+.promo .content {
+  width: min(90%, 1444px);
+  margin-inline: auto;
+}
+
 .promo .content h2 {
   font-size: 1.5em;
   font-weight: bold;
@@ -180,11 +185,16 @@ header {
 }
 
 .category .content {
+  width: min(90%, 1600px);
+  margin-inline: auto;
+}
+.category .content .inner {
   display: flex;
   justify-content: space-between;
   align-content: center;
   gap: 0.5em;
 }
+
 
 .category .content .box {
   width: 100%;
@@ -238,8 +248,7 @@ header {
   margin-bottom: 1em;
 }
 .grid .content {
-  width: 100%;
-  padding: 0 1em;
+  width: min(90%, 1444px);
   margin-inline: auto;
 }
 .grid .content .inner {
@@ -299,6 +308,70 @@ header {
  .onnit .content .inner .right img {
    width: 90%;
  }
+
+ /* Sign-up */
+ .signUp {
+  padding: 3em 0;
+  background: #FAFAFA;
+ }
+
+ .signUp .content {
+  width: min(90%, 500px);
+  margin-inline: auto;
+  text-align: center;
+ }
+ .signUp .content h2 {
+  font-size: 2em;
+ }
+ .signUp .content p {
+  font-size: 1.125em;
+  color: grey;
+  margin-top: .5em;
+ }
+ .signUp .content .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.3em;
+ }
+ .signUp .content .form input{
+  padding: 1em;
+  width: 300px;
+  height: 48px;
+  border:2px solid lightgrey;
+  background: #ededed;
+ }
+ .signUp .content .form a {
+  padding: .6em;
+  width: 60px;
+  font-weight: 900;
+  border:2px solid lightgrey;
+  background: #ededed ;
+ }
+
+ /* Footer */
+ .footer {
+  padding: 4.5em;
+  background: #FAFAFA;
+ }
+
+ .footer .content {
+  /* border: 5px solid purple; */
+ }
+ .footer .content .inner {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+ }
+
+ .footer .content .inner .menu {
+  
+ }
+ .footer .content .inner .list {
+  padding: 0;
+ }
+
 
 
 /*# sourceMappingURL=style.css.map */
