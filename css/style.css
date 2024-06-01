@@ -17,6 +17,17 @@ a {
   text-decoration: none;
 }
 
+.btn {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    padding: 18px;
+    color: #FAFAFA;
+    background: #000000;
+    border-radius: 50px;
+}
+
 img {
   background-position: center center;
   background-repeat: no-repeat;
@@ -240,20 +251,54 @@ header {
  width: 100%;
  height: 100%;
 }
-.grid .content .inner .img-1 {
+.grid .content .inner .img-1, .grid .content .inner .img-2 {
   grid-area: 1 / span 3;
  }
-.grid .content .inner .img-2 {
-  grid-area: 1 / span 3;
- }
-.grid .content .inner .img-3 {
+.grid .content .inner .img-3, .grid .content .inner .img-4, .grid .content .inner .img-5 {
   grid-area: 2 / span 2;
  }
-.grid .content .inner .img-4 {
-  grid-area: 2 / span 2;
+
+ /* Onnit Group */
+ .onnit {
+  padding: 3em 0;
+  background: #FAFAFA;
  }
-.grid .content .inner .img-5 {
-  grid-area: 2 / span 2;
+ .onnit .content {
+  position: relative;
+  width: min(90%, 1444px);
+  margin-inline: auto;
  }
+ .onnit .content h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+ }
+ .onnit .content .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .onnit .content .inner .left {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  padding: 2em;
+  background: #FAFAFA;
+  text-align: center;
+ }
+ .onnit .content .inner .left img {
+  width: 100px;
+ }
+ .onnit .content .inner .left p {
+  font-size: 1em;
+  margin-bottom: 2em;
+ }
+
+ .onnit .content .inner .right {
+  text-align: right;
+ }
+ .onnit .content .inner .right img {
+   width: 90%;
+ }
+
 
 /*# sourceMappingURL=style.css.map */
