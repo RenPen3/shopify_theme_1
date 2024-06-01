@@ -29,28 +29,28 @@ header {
   width: 100%;
 }
 
-.header-content {
+.header .content {
   margin-inline: auto;
 }
 
-.header-content__header1 {
+.header .content .header1 {
   background: #000000;
   text-align: center;
   padding: 8px;
 }
 
-.header-content__header1 small {
+.header .content .header1 small {
   font-size: 0.8em;
   color: #FAFAFA;
 }
 
-.header-content__header1 a {
+.header .content .header1 a {
   font-size: 0.8em;
   color: #FAFAFA;
   text-underline-offset: 3px;
 }
 
-.header-content__header2 {
+.header .content .header2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,19 +60,19 @@ header {
   border-bottom: 1px solid #d3d3d3;
 }
 
-.header-content__header2 a {
+.header .content .header2 a {
   font-size: 0.8em;
   color: rgb(98, 98, 98);
 }
 
-.header-content__header2-list {
+.header .content .header2 .list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
 }
 
-.header-content__header3 {
+.header .content .header3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -81,30 +81,32 @@ header {
   padding: 16px 24px;
 }
 
-.header-content__header3 img {
+.header .content .header3 img {
   width: 130px;
 }
 
-.header-content__header3-ham {
+.header .content .header3 .ham {
   display: none;
 }
 
-.header-content__header3-nav {
+.header .content .header3 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-content__header3-list {
+.header .content .header3 .list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2em;
 }
 
-.header-content__header3-list li a {
+.header .content .header3 .list li a {
   font-size: 1em;
   font-weight: 600;
+  color: #000000;
+  white-space: nowrap;
 }
 
 .hero {
@@ -121,14 +123,14 @@ header {
   background: #FAFAFA;
 }
 
-.promo-content h2 {
+.promo .content h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
-.promo-content__bottom {
+.promo .content .bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -136,12 +138,12 @@ header {
   margin-top: 1.5em;
 }
 
-.promo-content__bottom p {
+.promo .content .bottom p {
   font-size: 1.125em;
   font-weight: 500;
 }
 
-.promo-content__bottom a {
+.promo .content .bottom a {
   font-size: 1.2em;
   text-align: center;
   width: 300px;
@@ -151,7 +153,7 @@ header {
   border-radius: 50px;
 }
 
-.promo-content__bottom a:hover {
+.promo .content .bottom a:hover {
   box-shadow: 10px 10px 10px lightgrey;
 }
 
@@ -166,19 +168,19 @@ header {
   margin-bottom: 1em;
 }
 
-.category-content {
+.category .content {
   display: flex;
   justify-content: space-between;
   align-content: center;
   gap: 0.5em;
 }
 
-.category-content__box {
+.category .content .box {
   width: 100%;
   height: 180px;
 }
 
-.category-content__box img {
+.category .content .box img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,7 +193,7 @@ header {
   background: #FAFAFA;
 }
 
-.start-content {
+.start .content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -199,11 +201,11 @@ header {
   padding: 4em 0em 4em 8em;
 }
 
-.start-content p {
+.start .content p {
   margin-bottom: 3em;
 }
 
-.start-content a {
+.start .content a {
   display: block;
   font-size: 1.2em;
   text-align: center;
@@ -213,5 +215,45 @@ header {
   background: #000000;
   border-radius: 50px;
 }
+
+/* Grid */
+.grid {
+  padding: 5em 0;
+  background: #FAFAFA;
+}
+.grid h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.grid .content {
+  width: 100%;
+  padding: 0 1em;
+  margin-inline: auto;
+}
+.grid .content .inner {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  gap: 1em;
+}
+.grid .content .inner img {
+ width: 100%;
+ height: 100%;
+}
+.grid .content .inner .img-1 {
+  grid-area: 1 / span 3;
+ }
+.grid .content .inner .img-2 {
+  grid-area: 1 / span 3;
+ }
+.grid .content .inner .img-3 {
+  grid-area: 2 / span 2;
+ }
+.grid .content .inner .img-4 {
+  grid-area: 2 / span 2;
+ }
+.grid .content .inner .img-5 {
+  grid-area: 2 / span 2;
+ }
 
 /*# sourceMappingURL=style.css.map */
