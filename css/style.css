@@ -37,6 +37,8 @@ a {
   width: 100%;
 }
 
+
+/* Header */
 .header {
   width: 100%;
 }
@@ -115,6 +117,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-inline: auto;
 }
 
 .header .content .header3 .list {
@@ -136,6 +139,47 @@ a {
   display: none;
 }
 
+ /* Mobile Menu */
+ .mobile-nav {
+  display: block;
+  position: absolute;
+  background: #FAFAFA;
+  width: 75%;
+  height: 100dvh;
+  padding: 1em;
+}
+
+.mobile-nav img{
+  width: 100px;
+}
+.mobile-nav .x-btn {
+}
+
+.mobile-nav .content-1 {
+}
+.mobile-nav .content-2 {
+}
+
+
+.mobile-nav .menu {
+  background: #FAFAFA;
+  padding: 0;
+}
+
+.mobile-nav .menu li {
+  padding: 1em;
+}
+
+.mobile-nav .menu li::before {
+  background: #FAFAFA;
+  content:"Supplements";
+}
+
+
+
+.mobile-nav .menu a {
+  color: #000000;
+}
 
 
 
@@ -145,6 +189,16 @@ a {
   justify-content: center;
   align-items: center;
   background: #FAFAFA;
+  /* width: 100vhw; */
+}
+
+.hero .img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
 }
 
 .promo {
@@ -338,7 +392,7 @@ a {
  }
 
  .signUp .content {
-  width: min(90%, 500px);
+  width: min(90%, 750px);
   margin-inline: auto;
   text-align: center;
  }
@@ -359,23 +413,30 @@ a {
  }
  .signUp .content .form input{
   padding: 1em;
-  width: 300px;
+  width: 100%;
   height: 48px;
   border:2px solid lightgrey;
   background: #ededed;
  }
  .signUp .content .form a {
   padding: .6em;
-  width: 60px;
+  width: 100px;
   font-weight: 900;
-  border:2px solid lightgrey;
-  background: #ededed ;
+  border:2px solid #a7a7a7;
+  border-radius: 50px;
+  color: #FAFAFA;
+  background: #a7a7a7 ;
  }
 
  /* Footer */
  .footer {
   padding: 2em 3em .5em 3em;
   background: #161616;
+ }
+
+ .footer .content {
+  width: min(90%, 1444px);
+  margin-inline: auto;
  }
 
  .footer .content .inner {
@@ -486,6 +547,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+ 
   .mobile-header2 .bag {display: none;}
   .promo {padding: 24px 8px;}
   .promo .content h2 {font-size: 1em;}
