@@ -67,7 +67,7 @@
     <main>
 
       <section class="hero" id="hero">
-        <a href="#"> <img
+        <a href="#"> <img class="img"
             src="https://images.ctfassets.net/nfc1w9qpk6sl/4TruudFhIzsaiVRvXsck79/b71f09886d92c2e470a5abf330ef7d19/Homepage_Banner.png?q=40&fm=jpg&fl=progressive"
             alt="hero section">
         </a>
@@ -76,7 +76,7 @@
       <section class="promo" id="onnit-x">
         <div class="content">
           <h2>NEW REWARDS IN ONNIT X</h2>
-          <img
+          <img class="img"
             src="https://images.ctfassets.net/nfc1w9qpk6sl/3kTt8makqVDz2xnK0jPsBr/e0a721e0618bf48a2bea28b0ce09ee86/2024-OnnitX-Drop-q1-2850x1300.jpg?q=40&fm=jpg&fl=progressive"
             alt="">
           <div class="bottom">
@@ -92,7 +92,7 @@
       <section class="promo" id="multi-vitamin">
         <div class="content">
           <h2 class="">Go Beyond A Multivitamin</h2>
-          <img
+          <img class="img"
             src="https://images.ctfassets.net/nfc1w9qpk6sl/44srCkhJOSpwuYQM7nWZfx/53ff83d6803711f5ed9268a789223715/Total-Human-2.jpg?q=40&fm=jpg&fl=progressive"
             alt="">
           <div class="bottom">
@@ -113,7 +113,7 @@
           <div class="inner">
 
             <div class="box">
-              <img
+              <img class="img"
                 src="https://onnits3.imgix.net/product-page/whey-protein/2023-WheyP-wpage-gallery-3.png?q=40&fm=pjpg&auto=compress,format"
                 alt="image">
             </div>
@@ -140,7 +140,7 @@
         <div class="content">
           <h2>Make Every Workout Count
           </h2>
-          <img
+          <img class="img"
             src="https://images.ctfassets.net/nfc1w9qpk6sl/67tWsUX4cwCjk0nfebC4HG/f66e3efe9dfc4139d6961aee2be0eb61/Make-Every-Workout-Count-2850x1300.jpg?q=40&fm=jpg&fl=progressive"
             alt="">
           <div class="bottom">
@@ -164,7 +164,7 @@
             <a href="#">Button</a>
           </div>
           <div>
-            <img
+            <img class="img"
               src="https://images.ctfassets.net/nfc1w9qpk6sl/2gpHWD825FkuMiAOc6SM7z/5818d888c8674012e58f3621a4c8740d/Choose_Your_Trial_Feature_Banner.png?q=40&fm=jpg&fl=progressive"
               alt="image">
           </div>
@@ -178,26 +178,27 @@
           <div class="inner">
 
             <div class="img-1">
-              <img
+              <img class="img"
                 src="https://onnitacademy.imgix.net/wp-content/uploads/2023/02/chest-and-biceps-workouts-editorial.jpg"
                 alt="man with dumbell">
             </div>
             <div class="img-2">
-              <img class=""
+              <img class="img"
                 src="https://onnitacademy.imgix.net/wp-content/uploads/2021/01/correctbed.jpg"
                 alt="bedroom">
             </div>
             <div class="img-3">
-              <img src="https://onnitacademy.imgix.net/2016/07/rest@digestiveprocess.jpg"
+              <img class="img"
+                src="https://onnitacademy.imgix.net/2016/07/rest@digestiveprocess.jpg"
                 alt="girl laying down">
             </div>
             <div class="img-4">
-              <img
+              <img class="img"
                 src="https://onnitacademy.imgix.net/wp-content/uploads/2019/01/NEW-CAFE-75-31-1440x960.jpg"
                 alt="8 Mouth-Watering Protein Shake Recipes To Maximize Gains">
             </div>
             <div class="img-5">
-              <img
+              <img class="img"
                 src="https://onnitacademy.imgix.net/wp-content/uploads/2022/11/shoulderimpopener.jpg"
                 alt="man with arm lifted up">
             </div>
@@ -265,7 +266,7 @@
     <footer class="footer" id="footer">
       <div class="content">
         <div class="inner">
-          <div class="menu">
+          <div>
             <h2>Company</h2>
             <ul class="list">
               <li><a href="#" class="">About</a></li>
@@ -276,7 +277,7 @@
               <li><a href="#" class="">Sitemap</a></li>
             </ul>
           </div>
-          <div class="">
+          <div>
             <h2>Events</h2>
             <ul class="list">
               <li><a href="#" class="">Upcoming Events</a></li>
@@ -316,7 +317,7 @@
               <li><a href="#" class="">Archives</a></li>
             </ul>
           </div>
-          <div class="">
+          <div>
             <h2>Customer Service</h2>
             <ul class="list">
               <li><a href="#" class="">1-855-ONNIT-99</a></li>
@@ -328,12 +329,11 @@
             </ul>
           </div>
         </div>
-        <div class="menu">
-          <div>
-            <h3>#GETONNIT</h3>
-          </div>
-          <div class="">
-            <ul class="">
+
+        <div class="inner inner2">
+          <h2>#GETONNIT</h2>
+          <div class="list">
+            <ul class="icons">
               <li>
                 <a href="#">
                   <img class="w-8" src="https://i.ibb.co/MRgz76W/icons8-facebook-50.png" alt="">
@@ -361,21 +361,23 @@
               </li>
             </ul>
           </div>
-          <div class="">
-            <input class="" type="email" placeholder="Email">
-            <button class="">></button>
+          <div class="form-box">
+            <input type="email" placeholder="Your email">
+            <button aria-label="Subscrube to Newsletter" href="#" type="Submit"><i
+                class="fa-regular fa-envelope"></i></button>
           </div>
-          <div class="">
-            <input class="" type="search" placeholder="Search">
-            <button class="">></button>
+          <div class="form-box">
+            <input type="search" placeholder="Search...">
+            <button aria-label="Search" href="#" type="Submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
-        <div class="menu">
-          <div class="">
-            <a href="#"><img src="https://placehold.co/54x60" /></a>
-          </div>
+
+        <div class="inner">
+          <a href="#"><img class="u-logo" src="https://i.ibb.co/28P6Y1x/unilever-logo.png" />
+          </a>
           <div>
-            <div class="">
+            <div class="end-list">
               <a href="#">© 2024 Onnit Labs, Inc.</a>
               <a href="#">Privacy Policy</a>
               <a href="#">Terms & Conditions </a>
@@ -383,22 +385,19 @@
               <a href="#">Do Not Sell or Share My Personal Information </a>
               <a href="#">AdChoices - Do Not Sell or Share </a>
             </div>
-            <div class="">
+            <div class="end-list">
               <a href="#">Consumer Health Data Privacy Policy </a>
               <a href="#"> Limit Use of My Sensitive Personal Information </a>
               <a href="#">Secure Shopping </a>
               <a href="#">Accessibility</a>
               <a href="#">Do Not Sell or Share My Personal Information </a>
               <a href="#">AdChoices - Do Not Sell or Share </a>
-            </div>
-
-            <div class="">
+              <br>
               <a href="#">† THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG
                 ADMINISTRATION.
                 THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE, OR PREVENT ANY
                 DISEASE.</a>
             </div>
-
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ a {
     border-radius: 50px;
 }
 
-img {
+.img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -352,25 +352,91 @@ header {
 
  /* Footer */
  .footer {
-  padding: 4.5em;
-  background: #FAFAFA;
+  padding: 2em 3em .5em 3em;
+  background: #161616;
  }
 
- .footer .content {
-  /* border: 5px solid purple; */
- }
  .footer .content .inner {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid red; */
+  gap: 1.2em;
+  /* border: 2px solid orange; */
+  margin-bottom: 2em;
+ }
+ .footer .content .inner .end-list a {
+  font-size: .8em;
+  color: #A8A8A8;
  }
 
- .footer .content .inner .menu {
-  
+ .footer .content .inner img {
+  width: 36px !important;
  }
+
+ .footer .content .inner .u-logo {
+  width: 90px !important;
+ }
+
+ .footer .content .inner2{
+  align-items: center;
+ }
+
+ .footer .content .inner .icons {
+  display: flex;
+  justify-content: space-between;
+  gap: .8em;
+  padding: 0;
+ }
+
+ .footer .content .inner h2 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #C6C6C6;
+ }
+
  .footer .content .inner .list {
   padding: 0;
  }
+
+ .footer .content .inner .list img {
+  width: 36px;
+ }
+
+ .footer .content .inner .list a {
+  font-size: .9em;
+  font-weight: 500;
+  color: #A8A8A8;
+ }
+
+ .footer .content .inner .form-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #EDEDED;
+  height: 100%;
+ }
+ 
+ .footer .content .inner .form-box input {
+  background: #EDEDED;
+  border: transparent;
+  border-right: 2px solid lightgrey;
+  width: 100%;
+  padding: 1.3em;
+ }
+
+ .footer .content .inner .form-box .fa-magnifying-glass, .footer .content .inner .form-box .fa-envelope {
+  font-size: 1.2em;
+ }
+
+ .footer .content .inner .form-box button {
+  background: #EDEDED;
+  border: transparent;
+  height: 100%;
+  padding: 1em;
+  cursor: pointer;
+
+ }
+ 
 
 
 
