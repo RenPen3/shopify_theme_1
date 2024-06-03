@@ -26,6 +26,7 @@ a {
     color: #FAFAFA;
     background: #000000;
     border-radius: 50px;
+   margin-inline: auto;
 }
 
 .img {
@@ -36,7 +37,7 @@ a {
   width: 100%;
 }
 
-header {
+.header {
   width: 100%;
 }
 
@@ -85,20 +86,30 @@ header {
 
 .header .content .header3 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 3em;
   background: #FAFAFA;
   padding: 16px 24px;
 }
-
-.header .content .header3 img {
-  width: 130px;
+.header .content .header3 .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
 }
 
 .header .content .header3 .ham {
+  font-size: 1.1em;
   display: none;
 }
+
+.header .content .header3 img {
+  width: 130px;
+  display: block;
+}
+
+
 
 .header .content .header3 .nav {
   display: flex;
@@ -120,6 +131,15 @@ header {
   white-space: nowrap;
 }
 
+/* Mobile Header 2 */
+.mobile-header2 {
+  display: none;
+}
+
+
+
+
+/* Hero */
 .hero {
   display: flex;
   justify-content: center;
@@ -311,7 +331,7 @@ header {
 
  /* Sign-up */
  .signUp {
-  padding: 3em 0;
+  padding: 3em 0 6em 0;
   background: #FAFAFA;
  }
 
@@ -434,8 +454,111 @@ header {
   height: 100%;
   padding: 1em;
   cursor: pointer;
-
  }
+
+
+
+ @media screen and (max-width: 1090px) {
+  .mobile-header2 .fa-solid, .mobile-header2 .fa-regular {color: #626262;}
+
+  .mobile-header2 {display: flex;gap: 2em;}
+
+  .header .content .header2, .header .content .header3 {padding: 8px 16px;}
+
+  .header .content .header2 .list {display: none;}
+
+  .header .content .header3 .list {display: none;  }
+
+  .header .content .header3 .ham {display: flex;}
+
+  .promo {padding: 32px 64px;}
+
+  .promo .content {text-align: center;}
+
+  .promo .content .bottom {flex-direction: column;  align-items:center;}
+
+  .start .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 4em 1.5em 4em 1.5em;
+  }
+
+  .start .content .start-btn {
+    width: 300px;
+    margin-inline: auto;
+  }
+
+  .onnit .content {
+    position: none;
+    width: min(90%, 1444px);
+    margin-inline: auto;
+   }
+
+   .onnit .content .inner {flex-direction: column-reverse;justify-content: center;align-items: center;}
+
+  .onnit .content .inner .left {position: relative;
+  width: 100%;padding: 1em;}
+
+  .onnit .content .inner .right {text-align:center;}
+  .onnit .content .inner .right img {width: 100%;}
+  .onnit .content .onnit-btn {
+    font-size: 1.2em;
+    text-align: center;
+    width: 300px;
+    padding: 18px;
+    color: #FAFAFA;
+    background: #000000;
+    border-radius: 50px;
+  }
+
+  .onnit .content h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+   /* mobile */
+ .mobile-header2 .bag {
+  display: none;
+}
+.promo {padding: 24px 8px;}
+.promo .content h2 {font-size: 1em;}
+  
+.category .content .inner {flex-direction: column;gap: 1em;}
+
+.footer .content .inner {
+  flex-direction: column;
+  gap: 1.1em;
+  margin-bottom: 2em;
+}
+
+.footer .content .inner .u-logo {
+  width: 50px !important;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 630px) {
+  /* mobile */
+.mobile-header2 .favs, .mobile-header2 .account,.mobile-header2 .search {
+ display: none;
+}
+ 
+}
+
  
 
 
