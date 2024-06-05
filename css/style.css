@@ -141,12 +141,16 @@ a {
 
  /* Mobile Menu */
  .mobile-nav {
-  display: block;
+  display: none;
   position: absolute;
   background: #FAFAFA;
   width: 75%;
   height: 100dvh;
   padding: 1em;
+  transition: all 1s ease-in-out;
+}
+.mobile-nav.show {
+  display: block;
 }
 
 .mobile-nav img{
