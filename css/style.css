@@ -141,12 +141,12 @@ a {
 
  /* Mobile Menu */
  .mobile-nav {
-  display: none;
+  position: relative;
+  display: block;
   position: absolute;
   background: #FAFAFA;
-  width: 75%;
-  height: 100dvh;
-  padding: 1em;
+  width: 86%;
+  min-height: 100vh;
   transition: all 1s ease-in-out;
 }
 .mobile-nav.show {
@@ -157,13 +157,37 @@ a {
   width: 100px;
 }
 .mobile-nav .x-btn {
+  font-size: 1.5em;
+  margin-right: .5em;
 }
 
 .mobile-nav .content-1 {
+  vertical-align: middle;
+  padding: .5em 1em;
+  border-bottom: 1px solid lightgrey;
+}
+.mobile-nav .content-1 img {
+  width: 110px;
 }
 .mobile-nav .content-2 {
+  border-bottom: 1px solid lightgrey;
+  padding: 1em;
+}
+.mobile-nav .content-2 input {
+  padding: 1em;
+  border: 1px solid lightgrey;
 }
 
+.mobile-nav .content-2 button {
+    color: #FFFFFF;
+    font-size: 1em;
+    width: 110px;
+    background: #545454;
+    border: none;
+    border-radius: 100px;
+    padding: .8em;
+    margin-left: .4em;
+}
 
 .mobile-nav .menu {
   background: #FAFAFA;
@@ -171,18 +195,17 @@ a {
 }
 
 .mobile-nav .menu li {
+  font-size: .9em;
+  font-weight: 600;
   padding: 1em;
-}
-
-.mobile-nav .menu li::before {
-  background: #FAFAFA;
-  content:"Supplements";
+  border-bottom: 1px solid lightgrey;
+  text-transform: uppercase;
 }
 
 
 
 .mobile-nav .menu a {
-  color: #000000;
+  color: #161616;
 }
 
 
