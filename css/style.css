@@ -142,7 +142,7 @@ a {
  /* Mobile Menu */
  .mobile-nav {
   position: relative;
-  display: block;
+  display: none;
   position: absolute;
   background: #FAFAFA;
   width: 86%;
