@@ -26,7 +26,7 @@ a {
     color: #FAFAFA;
     background: #000000;
     border-radius: 50px;
-   margin-inline: auto;
+    margin-inline: auto;
 }
 
 .img {
@@ -97,13 +97,18 @@ a {
 .header .content .header3 .box {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   gap: 1em;
 }
 
 .header .content .header3 .ham {
-  font-size: 1.1em;
   display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.header .content .header3 .ham .fa-bars {
+  font-size: 1.2em;
+  color: #000000;
 }
 
 .header .content .header3 img {
@@ -141,9 +146,7 @@ a {
 
  /* Mobile Menu */
  .mobile-nav {
-  position: relative;
   display: none;
-  position: absolute;
   background: #FAFAFA;
   width: 86%;
   min-height: 100vh;
@@ -170,10 +173,13 @@ a {
   width: 110px;
 }
 .mobile-nav .content-2 {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid lightgrey;
   padding: 1em;
 }
 .mobile-nav .content-2 input {
+  width: 50%;
   padding: 1em;
   border: 1px solid lightgrey;
 }
@@ -181,12 +187,12 @@ a {
 .mobile-nav .content-2 button {
     color: #FFFFFF;
     font-size: 1em;
-    width: 110px;
     background: #545454;
     border: none;
     border-radius: 100px;
     padding: .8em;
     margin-left: .4em;
+    width: 50%;
 }
 
 .mobile-nav .menu {
@@ -287,11 +293,12 @@ a {
 }
 
 .category .content {
-  width: min(90%, 1600px);
+  width: min(99%, 1800px);
   margin-inline: auto;
 }
 .category .content .inner {
-  display: flex;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(8, 1fr);
   justify-content: space-between;
   align-content: center;
   gap: 0.5em;
@@ -299,8 +306,28 @@ a {
 
 
 .category .content .box {
+  position: relative;
   width: 100%;
   height: 180px;
+  grid-area: 1 / span 2;
+  cursor: pointer;
+}
+
+.category .content .box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+
+.category .content .box h2{
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .6em 1em;
+  color: #FFFFFF;
 }
 
 .category .content .box img {
@@ -327,6 +354,9 @@ a {
 
 .start .content p {
   margin-bottom: 3em;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .start .content a {
@@ -359,10 +389,47 @@ a {
   grid-template: repeat(2, 1fr) / repeat(6, 1fr);
   gap: 1em;
 }
-.grid .content .inner img {
+.grid .content .inner .img {
  width: 100%;
  height: 100%;
 }
+
+.grid .content .inner .images {
+  position: relative;
+ }
+.grid .content .inner .images::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+.grid .content .inner .images h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: #FFFFFF;
+ }
+
+.grid .content .inner .images .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: .9em;
+  font-weight: 600;
+  width: 100px;
+  margin: 2em;
+  text-align: center;
+  padding: 6px;
+  color: #000000;
+  background: #FFFFFF;
+ }
 .grid .content .inner .img-1, .grid .content .inner .img-2 {
   grid-area: 1 / span 3;
  }
@@ -401,7 +468,7 @@ a {
   width: 100px;
  }
  .onnit .content .inner .left p {
-  font-size: 1em;
+  font-size: 1.125em;
   margin-bottom: 2em;
  }
 
@@ -578,14 +645,11 @@ a {
   .mobile-header2 .bag {display: none;}
   .promo {padding: 24px 8px;}
   .promo .content h2 {font-size: 1em;}
-  .category .content .inner {flex-direction: column;gap: 1em;}
-  .grid .content .inner {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template: repeat(1, 1fr) / repeat(5, 1fr);
-    gap: 1em;
-}
+  .promo .content .bottom a, .start .content .start-btn, .onnit .content .onnit-btn {font-size: 1em;width: 100%;padding: .5em;}
+  .category .content .inner {display: flex;flex-direction: column;  grid-template: repeat(0, 1fr) / repeat(0, 1fr);gap: 2em;}
+  .category .content .box {height: 350px;}
+  .category .content .box h2 {padding: 1.5em;}
+  .grid .content .inner {display: grid;justify-content: center;align-items: center;grid-template: repeat(1, 1fr) / repeat(5, 1fr);gap: 1em;}
 
 .grid .content .inner .img-1 {
   grid-area: 1 / span 5;
@@ -602,7 +666,7 @@ a {
 .grid .content .inner .img-5 {
   grid-area: 5 / span 5;
 }
-  .footer {padding: 2em 1.5em .5em 1.5em;}
+  .footer {padding: 2em 1.5em .5em 1.5em;text-align: center;}
   .footer .content .inner {flex-direction: column;gap: 1.1em;
     margin-bottom: 2em;}
   .footer .content .inner .u-logo { width: 50px !important;}
