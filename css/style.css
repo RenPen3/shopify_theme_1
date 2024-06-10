@@ -635,7 +635,7 @@ a {
   .mobile-header2 {display: flex;gap: 2em;}
   .header .content .header2, .header .content .header3 {padding: 8px 16px;}
   .header .content .header2 .list {display: none;}
-  .header .content .header3 .list {display: none;  }
+  .header .content .header3 .nav .list {display: none;  }
   .header .content .header3 .ham {display: flex;}
   .promo {padding: 32px 64px;}
   .promo .content {text-align: center;}
