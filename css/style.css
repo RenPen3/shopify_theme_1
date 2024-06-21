@@ -501,7 +501,7 @@ a {
  }
 
  .signUp .content {
-  width: min(90%, 750px);
+  width: min(90%, 500px);
   margin-inline: auto;
   text-align: center;
  }
